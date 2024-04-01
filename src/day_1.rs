@@ -1,5 +1,4 @@
 use std::{io::BufRead, io::BufReader, fs::File};
-use std::string::ToString;
 
 fn find_first_char_in_line(line: &str, reverse: bool) -> Option<char> {
     let char_iter: Box<dyn Iterator<Item=char>> = if !reverse {Box::new(line.chars())} else {Box::new(line.chars().rev())};

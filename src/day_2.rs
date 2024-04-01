@@ -1,6 +1,5 @@
 use std::{io::{BufReader, BufRead}, fs::File, fmt::Display, num::ParseIntError};
 use std::str::FromStr;
-use std::result::Result;
 /// A draw represents the result of the elve taking cubes out of the bag
 /// A game can have many draws and for each game the number of cubes of each color is recorded
 
