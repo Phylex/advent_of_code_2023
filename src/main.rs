@@ -4,6 +4,7 @@ use clap::{arg, value_parser, Command, ArgAction};
 
 mod day_1;
 mod day_2;
+mod day_3;
 
 fn main() {
     let command_line_argument = Command::new("day_1")
@@ -33,6 +34,7 @@ fn main() {
     match day {
         1 => day_1::solve_day_1(freader, *command_line_argument.get_one("two").unwrap()),
         2 => day_2::solve_day_2(freader, *command_line_argument.get_one("two").unwrap()),
+        3 => day_3::solve_day_3(freader, false),
         _ => {
             println!("Not implemented or out of bounds");
         }
